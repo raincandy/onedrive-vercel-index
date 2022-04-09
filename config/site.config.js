@@ -14,7 +14,7 @@ module.exports = {
   icon: '/android-chrome-192x192.png',
 
   // The name of your website. Present alongside your icon.
-  title: "NNM的OneDrive",
+  title: process.env.NEXT_PUBLIC_SITE_TITLE || "NNM的OneDrive",
 
   // The folder that you are to share publicly with onedrive-vercel-index. Use '/' if you want to share your root folder.
   baseDirectory: process.env.NEXT_PUBLIC_BASE_DIRECTORY || '/NNM的分享站',                          // process.env.NEXT_PUBLIC_BASE_DIRECTORY || '/',
